@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Course</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Final project">
+    <meta name="keywords" content="course,programing">
+    <meta name="author" content="Lika Revazishvili">
+    <link rel="stylesheet" href="css/reset.css">
+    <script src="https://kit.fontawesome.com/0eca0e059b.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Mono:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<header class="blackbackground" id="header">
+    <div class="header-container blackbackground display-flex">
+            <a href="index.html">
+                <i class="fa-solid fa-rocket"></i>
+            </a>
+            <nav class="nav-list" id="navbar-id">
+                <ul class="ul-list display-flex">
+                    <li class="li-list"> 
+                        <a href="#header" class="nav-list-a same-nav">Home</a>
+                    </li>
+                    <li class="li-list">
+                        <a href="#aboutusid" class="nav-list-a same-nav">About us</a>
+                    </li>
+                    <li class="li-list">
+                        <a href="#section-link2" class="nnav-list-a same-nav">Course</a>
+                    </li>
+                    <li class="li-list">
+                        <a href="#id-teachers" class="nav-list-a same-nav">Teachers</a>
+                    </li>
+                    <li class="li-list">
+                        <a href="#footer" class="nav-list-a a-rocket-1">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="toggle-list" id="toggle-Button">
+                <div class="line line1" id="burger1"></div>
+                <div class="line line2" id="burger2"></div>
+                <div class="line line3" id="burger3"></div>
+            </div>
+            <div class="fas fa-bars" id="menu-btn"></div>
+            <i class="fa-solid fa-bars" id="menu-btn"></i>
+    </div>   
+</header>
+<section class="section1" id="section-link1" >
+    <div class="slider-wrapper" id="myDiv">
+        <img class="key" src="img/ct.png" alt="image1-1">
+        <button class="arrow arrow-left" id="arrow-left"> <i class="fa-solid fa-arrow-left"></i> </button>
+        <button class="arrow arrow-right" id="arrow-right"> <i class="fa-solid fa-arrow-right"></i> </button>
+        <div class="slider" id="slider"></div>
+    </div>
+</section>
+<section class="display-flex blackbackground " id="aboutusid">
+    <div class="photodiv1"><img src="image/aboutus.png"></div>
+    <div class="accordion-body">
+        <h2 class="title">About us</h2>
+        <div class="accordion-div ">
+            <h2 class="accordion-title">Education</h2>
+            <p class="accordion-text">Aducation provides Advertising Education to small businesses, agencies and media organizations. Our goal is to help support your team with resource materials, consulting services, educational seminars, online and face to face training.</p>
+        </div>
+    </div>
+</section>
+<Section id="id-teachers" class="blackbackground">
+    <h2 class="teachers-title">Teachers</h2>
+    <ul id="ul-list"></ul>
+    <button id="previous" class="btn"> Previous </button>
+    <button id="next" class="btn"> Next </button>
+</Section>
+<section class="section3 blackbackground" id="link-section3">
+    <h2 class="teachers-title">Registartion</h2>
+    <form action="" method="POST" id="registration" class="blackbackground">
+        <div class="input">
+            <input type="text" name="username" placeholder="Username" id="username">
+        </div>
+        <span class="error-text" id="error_username"></span>
+        <div class="input">
+            <input type="email" placeholder="Email" id="email" onkeydown='validateEmail()'>
+        </div>
+        <span class="error-text" id="error_email"></span>
+        <div class="input">
+            <input type="password" name="password" placeholder="Password" id="password">
+            <i id='toggleicon' class="fa-solid fa-eye-slash"></i>
+        </div>
+        <span class="error-text" id="error_password"></span>
+
+        <div class="input">
+            <input type="password" name="password2" placeholder="Repeat Password" id="password2">
+            <i id='toggleicon2' class="fa-solid fa-eye-slash"></i>
+        </div>
+        <span class="error-text" id="error_password2"></span>
+
+        
+        <span class="error-text" id="error_age"></span>
+
+        <div>
+            <input type="checkbox" name="agree" id="checkagree">
+            <label for="checkagree">I agree terms and conditions</label>
+        </div>
+        <span class="error-text" id="error_agree"></span>
+
+        <button type="submit">Send</button>
+</form>
+</section>
+<footer class="blackbackground footer-class" id="footer">
+    <div class="display-flex div-footer-main">
+        <div class="mapauto">
+            <iframe class="map1" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2978.4207161888044!2d44.75511321542482!3d41.71143957923579!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x404473374105893b%3A0x8ffb6ba50109d5bb!2z4YOw4YOd4YOj4YOb4YOb4YOQ4YOg4YOi4YOY!5e0!3m2!1ska!2sge!4v1652729593115!5m2!1ska!2sge" width="1088" height="286" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    
+        <div class="contactall">
+            <p class="colmuntext-title">Contact Info</p>
+            <div class="contactdiv-3">
+                <i class="fa-solid fa-envelope fa"></i>  
+                <a class="mailaction"  href="mailto:example@yahoo.com">aducation@info.ge</a>.<br>
+            </div>
+            <div class="contactdiv-3">
+                <i class="fa-solid fa-phone fa"></i>  
+                <a class="mailaction" href="+0 320 422 4254">+0 320 422 4254</a>
+            </div>
+            <div class="contactdiv-3">
+                <i class="fa-solid fa-location-dot fa"></i>
+                <a class="mailaction" href="https://www.google.com/maps/d/viewer?source=gplus-ogsb&ie=UTF8&oe=UTF8&msa=0&mid=1B1lAsUpYFg82Je7XN1_cxRPf1UU&ll=0%2C0&z=7">Main Str Chicago Ilinois</a>
+            </div>
+            <div class="display-flex">
+                <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f fa-social"></i></a>
+                <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube fa-social"></i></a>
+                <a href="https://twitter.com/home"><i class="fa-brands fa-twitter fa-social"></i></a>
+            </div>
+            
+        </div>
+
+
+    </div>
+    <div class="bottom">
+        <p class="copyright">Copyright ©2022 All rights reserved | This template is made by <a href="#" class="copyright">Lika revazishvili</a></p>
+    </div>
+
+   
+    
+</footer>
+
+ 
+
+
+
+
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
